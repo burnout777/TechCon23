@@ -1,0 +1,43 @@
+<!-- Peter Game -->
+<!-- Student ID: 239019123 -->
+
+<!DOCTYPE html> <!-- tells the computer that the document type is html -->
+
+<html lang="en"> <!-- states that the html will be written in here. also sets the language as english -->
+    <head> <!-- The head of the document -->
+        <title>Contact</title> <!-- title of the document which shoes up on the tab. this pages title is home -->
+        <link rel = "stylesheet" type="text/css" href="styles.css"> <!-- links the css style sheet to the html document -->
+        <div class="banner"> <!-- this div is for the structure of the top menu of the website -->
+            <p class="logo">TechCon 2023</p> <!-- Logo text -->
+            <a href="./index.html" class="banner_item">Home</a> <!-- home button. this redirects to the index.html file -->
+            <a href="./contact.html" class="banner_item">Contact</a> <!-- this links you to a contact form at contact.html -->
+            <a href="./schedule.html" class="banner_item">Schedule</a> <!-- this links you to the schedule page at schedule.html -->
+            <a href="./speakers.html" class="banner_item">Speakers</a> <!-- this redirects the user to another page which is at speakers.html -->
+        </div>
+    </head>
+    <body> <!-- start of the body of the html -->
+        <h2 style="margin-left:25px;">Contact Form</h2>
+        <div class="container"> <!-- container for the form -->
+            <form action="/contact_list.php"> <!-- specifies the action to be executed when submit is pressed -->
+                <label for="forename">First Name</label> <!-- label for the first box "firstname" -->
+                <input type="text" id="forename" name="firstname" placeholder="Forename.."> <!-- input box which recieves input with the placeholder "Forename.." -->
+
+                <label for="surname">Surname</label> <!-- label for the second box, Surname -->
+                <input type="text" id="surname" name="lastname" placeholder="Family name.."> <!-- gets input from the box -->
+
+                <label for="country">Country</label> <!-- "country" label for the 3rd item. this one is a drop down list you select from -->
+                <select id="country" name="country"> <!-- states the pretext of the dropbox -->
+                    <option value="australia">Australia</option> <!-- first option from the list -->
+                    <option value="usa">USA</option> <!-- second option from the list -->
+                    <option value="uk">UK</option> <!-- third option from the list -->
+                </select> <!-- closes the sekection choices -->
+
+                <label for="subject">Reason for contact</label> <!-- next label is for the textbox -->
+                <textarea type="text" id="subject" name="subject" placeholder="Write something.." style="height: 150px; font-family:Georgia, 'Times New Roman', Times, serif"></textarea> <!-- sets conditions for the text area -->
+
+                <input type="submit" value="Submit"> <!-- creates button which when pressed executes the action described in the form tag -->
+            </form> <!-- closes form tag -->
+        </div> <!-- closes the div -->
+        <p style="text-align: center; font-size: large;">Please feel free to contact us at <a href="mailto: f85f7e655d3e80@beaconmessenger.com">this email</a> </p> <!-- adds a contact email the user can press to contact the company -->
+    </body> <!-- closes the body -->
+</html> <!--closes html file-->

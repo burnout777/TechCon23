@@ -1,0 +1,39 @@
+<!-- Peter Game -->
+<!-- Student ID: 239019123 -->
+
+<!DOCTYPE html> <!-- tells the computer that the document type is html -->
+
+<html lang="en"> <!-- states that the html will be written in here. also sets the language as english -->
+    <head> <!-- The head of the document -->
+        <script type="text/javascript" src="register_validate.js"></script>
+        <title>Register</title> <!-- title of the document which shoes up on the tab. this pages title is home -->
+        <link rel = "stylesheet" type="text/css" href="styles.css"> <!-- links the css style sheet to the html document -->
+        <div class="banner"> <!-- this div is for the structure of the top menu of the website -->
+            <p class="logo">TechCon 2023</p> <!-- Logo text -->
+            <a href="./index.html" class="banner_item">Home</a> <!-- home button. this redirects to the index.html file -->
+            <a href="./contact.html" class="banner_item">Contact</a> <!-- this links you to a contact form at contact.html -->
+            <a href="./schedule.html" class="banner_item">Schedule</a> <!-- this links you to the schedule page at schedule.html -->
+            <a href="./speakers.html" class="banner_item">Speakers</a> <!-- this redirects the user to another page which is at speakers.html -->
+        </div> <!-- closes div -->
+    </head> <!-- closes head -->
+    <body> <!-- opens body part of the html dosument -->
+        <h1 class="register_title">Register</h1> <!-- title linked to the "register_title" class -->
+        <div class="register_form"> <!-- opens the div for the registration form -->
+            <form onsubmit="return validateForm()" action="index.html"> <!-- sets the action for the form when the submit button is pressed -->
+                <label for="forename">First Name</label> <!-- label for the first name -->
+                <input type="text" id="forename" name="forename" placeholder="Forename.."> <!-- text input box for the first name -->
+
+                <label for="surname">Surname</label> <!-- label for the surname --> 
+                <input type="text" id="surname" name="surname" placeholder="Family name.."> <!-- input box for surname -->
+
+                <label for="number">Number</label> <!-- label for party size -->
+                <input type="number" id="number" name="number" value="0"> <!-- input box for size of party -->
+
+                <label for="email">Email</label> <!-- label for the email address input box -->
+                <input type="text" id="email" name="email" placeholder="Email address.."> <!-- email address input box -->
+
+                <input type="submit"> <!-- Submit button -->
+            </form> <!-- closes form -->
+        </div> <!-- closes form div -->
+    </body> <!-- closes body -->
+</html> <!-- closes html -->

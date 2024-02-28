@@ -1,0 +1,84 @@
+<!-- Peter Game -->
+<!-- Student ID: 239019123 -->
+
+<!DOCTYPE html> <!-- tells the computer that the document type is html -->
+
+<html lang="en"> <!-- states that the html will be written in here. also sets the language as english -->
+    <head> <!-- The head of the document -->
+        <script type="text/javascript" src="schedule_javascript.js"></script> <!--links the page to a javascript file-->
+        <title>Schedule</title> <!-- title of the document which shoes up on the tab. this pages title is home -->
+        <link rel = "stylesheet" type="text/css" href="styles.css"> <!-- links the css style sheet to the html document -->
+        <div class="banner"> <!-- this div is for the structure of the top menu of the website -->
+            <p class="logo">TechCon 2023</p> <!-- Logo text -->
+            <a href="./index.html" class="banner_item">Home</a> <!-- home button. this redirects to the index.html file -->
+            <a href="./contact.html" class="banner_item">Contact</a> <!-- this links you to a contact form at contact.html -->
+            <a href="./schedule.html" class="banner_item">Schedule</a> <!-- this links you to the schedule page at schedule.html -->
+            <a href="./speakers.html" class="banner_item">Speakers</a> <!-- this redirects the user to another page which is at speakers.html -->
+        </div> <!-- closes menu banner div -->
+    </head> <!-- closes head -->
+    <body> <!-- opens html body section -->
+        <label>Filter by Day:</label>
+        <select id="dayFilter" onchange="filterSchedule()" style="width: 15vw;">
+            <option value="all">All days</option>
+            <option value="23rd">23rd</option>
+            <option value="24th">24th</option>
+            <option value="25th">25th</option>
+        </select>
+        <table class="schedule_table" id="scheduleTable"> <!-- makes a table element -->
+            <tr> <!-- opens table record -->
+                <th class="schedule_header">Event Title</th> <!-- makes a heading in the table as "Event Title" -->
+                <th class="schedule_header">Speaker</th> <!-- makes heading in the table of "Speaker" -->
+                <th class="schedule_header">Date and Time</th> <!-- makes heading in the table as "Time" -->
+            </tr> <!-- closes table record -->
+            <tr data-day="23rd"> <!-- opens table record --> 
+                <td class="schedule_data">The future of AI</td> <!-- Adds data to the first heading of the table, "Event Title"-->
+                <td class="schedule_data">Leonardo da Vinci</td> <!-- Adds data to the second heading of the first record, namely "Speaker" -->
+                <td class="schedule_data">23rd 10:30 AM</td> <!-- Adds data to the third heading of the table in the first record, under "Time" -->
+            </tr> <!-- closes table record -->
+            <tr data-day="23rd"> <!-- opens table record -->
+                <td class="schedule_data">The consequences of Machine Learning</td> <!--adds data into the first heading-->
+                <td class="schedule_data">Leonardo da Vinci</td> <!--adds data into the second heading-->
+                <td class="schedule_data">23rd 11:30 AM</td> <!--adds data into the third heading-->
+            </tr> <!-- closes table record -->
+            <tr data-day="23rd"> <!-- opens table record -->
+                <td class="schedule_data">The future of Moore's Law</td> <!--adds data into the first heading-->
+                <td class="schedule_data">Donatello</td> <!--adds data into the second heading-->
+                <td class="schedule_data">23rd 12:30 PM</td> <!--adds data into the third heading-->
+            </tr> <!-- closes table record -->
+            <tr data-day="23rd"> <!-- opens table record -->
+                <td class="schedule_data">Cloud computing council</td> <!--adds data into the first heading-->
+                <td class="schedule_data">Michelangelo</td> <!--adds data into the second heading-->
+                <td class="schedule_data">23rd 03:00 PM</td> <!--adds data into the third heading-->
+            </tr> <!-- closes table record -->
+            <tr data-day="23rd"> <!-- opens table record -->
+                <td class="schedule_data">Consumer quantum computers?</td> <!--adds data into the first heading-->
+                <td class="schedule_data">Michelangelo</td> <!--adds data into the second heading-->
+                <td class="schedule_data">23rd 05:00 PM</td> <!--adds data into the third heading-->
+            <tr data-day="24th">
+                <td class="schedule_data">Basics of shell scripting</td>
+                <td class="schedule_data">Leonardo da Vinci</td>
+                <td class="schedule_data">24th 13:00 PM</td>
+            </tr>
+            <tr data-day="24th">
+                <td class="schedule_data">bash vs sh</td>
+                <td class="schedule_data">Donatello</td>
+                <td class="schedule_data">24th 15:00</td>
+            </tr>
+            <tr data-day="25th">
+                <td class="schedule_data">Is HTML a programming language?</td>
+                <td class="schedule_data">Michelangelo</td>
+                <td class="schedule_data">25th 11:00 AM</td>
+            </tr>
+            <tr data-day="25th">
+                <td class="schedule_data">Java vs JS</td>
+                <td class="schedule_data">Michelangelo</td>
+                <td class="schedule_data">25th 17:00</td>
+            </tr>
+            <tr data-day="25th">
+                <td class="schedule_data">How to get away with hacking</td>
+                <td class="schedule_data">Leonardo da Vinci</td>
+                <td class="schedule_data">25th 19:00</td>
+            </tr> <!-- closes table record -->
+        </table> <!--closes table element-->
+    </body> <!--closes html body-->
+</html> <!--closes html-->

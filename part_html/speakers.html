@@ -1,0 +1,48 @@
+<!-- Peter Game -->
+<!-- Student ID: 239019123 -->
+
+<!DOCTYPE html> <!-- tells the computer that the document type is html -->
+
+<html lang="en"> <!-- states that the html will be written in here. also sets the language as english -->
+    <head> <!-- The head of the document -->
+        <title>Speakers</title> <!-- title of the document which shoes up on the tab. this pages title is home -->
+        <link rel = "stylesheet" type="text/css" href="styles.css"> <!-- links the css style sheet to the html document -->
+        <div class="banner"> <!-- this div is for the structure of the top menu of the website -->
+            <p class="logo">TechCon 2023</p> <!-- Logo text -->
+            <a href="./index.html" class="banner_item">Home</a> <!-- home button. this redirects to the index.html file -->
+            <a href="./contact.html" class="banner_item">Contact</a> <!-- this links you to a contact form at contact.html -->
+            <a href="./schedule.html" class="banner_item">Schedule</a> <!-- this links you to the schedule page at schedule.html -->
+            <a href="./speakers.html" class="banner_item">Speakers</a> <!-- this redirects the user to another page which is at speakers.html -->
+        </div> <!-- closes menu banner div -->
+    </head> <!-- closes head div -->
+    <body> <!-- opens body -->
+        <table class="speakers_container"> <!-- Creates a table. This is so i can format the speakers names, images and bios in a neat fashion -->
+            <!-- the css is written in such a way that you woudlnt be able to tell it is a table from the website. this is done on purpose -->
+
+<!--There are no headings in the table due to the fact that they should be inferred by the user, and I was going for a more pprofessional website look-->
+
+            <tr> <!-- opens table row record -->
+                <td><img class="speakers_image" src="img/davinci.png" alt="da Vinci"></td> <!-- creates table data of an image of the first speaker. this is from the /img/ folder -->
+                <td><p class="speaker_title" style="padding-left: 10px; padding-right: 10px;">Leonardo da Vinci</p></td> <!-- creates table data of the presenters name -->
+                <td class="speaker_bio">Leonardo di ser Piero da Vinci (15 April 1452 - 2 May 1519) was an Italian polymath of the <br> <!-- creates the 3rd piece of data as the bio of the presenter -->
+                    High Renaissance who was active as a painter, draughtsman, engineer, scientist, theorist, sculptor, <br> <!-- <br> tag creates a new line -->
+                    and architect.Vinci. Da Vinci will be speaking in our morning sessions about AI and machine learning.</td>
+            </tr> <!-- closes table row record -->
+            <tr> <!-- opens table row record -->
+                <td><img class="speakers_image" src="img/donatello.png" alt="Donatello"></td> <!--Creates data for the table of the image of the second presenter-->
+                <td><p class="speaker_title" style="padding-left: 10px; padding-right: 10px;">Donatello</p></td> <!-- creates table data of the presenters name -->
+                <td class="speaker_bio">Donato di Niccolò di Betto Bardi (c.1386  - 13 December 1466), better known as Donatello, was an Italian <br>
+                    sculptor of the Renaissance period. Born in Florence, he studied classical sculpture and used his knowledge <br>
+                    to develop an Early Renaissance style of sculpture. His main topic will be on Moores Law</td> <!-- creates the 3rd piece of data as the bio of the presenter -->
+            </tr> <!-- closes table row record -->
+            <tr> <!-- opens table row record -->
+                <td><img class="speakers_image" src="img/michelangelo.png" alt="Michelangelo"></td> <!--Creates data for the table of the image of the third presentor-->
+                <td><p class="speaker_title" style="padding-left: 10px; padding-right: 10px;">Michelangelo</p></td> <!-- creates table data of the presenters name -->
+                <td class="speaker_bio">Michelangelo di Lodovico Buonarroti Simoni; (6 March 1475 - 18 February 1564), known as Michelangelo, <br>
+                    was an Italian sculptor, painter, architect, and poet of the High Renaissance. Born in the Republic of Florence, <br>
+                    his work was inspired by models from classical antiquity and had a lasting influence on Western art. <br>
+                    will speak on cloud computing</td> <!-- creates the 3rd piece of data as the bio of the presenter -->
+            </tr> <!-- closes table row record -->
+        </table> <!-- closes table -->
+    </body> <!-- closes html body -->
+</html> <!-- closes html -->

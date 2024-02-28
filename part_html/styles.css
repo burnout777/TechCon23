@@ -1,0 +1,170 @@
+/*Style sheet*/
+
+.banner { /*background for the website banner at the top of the screen*/
+    overflow: hidden; /*this means excess of the element is hidden*/
+    border-color: black; /*as this is a big block is has a border. I wanted it to match so set it to black*/
+    background-color: black; /*setting background colour to black*/
+}
+
+.main_heading { /*This is the style for the main heading "TechCon 2023"*/
+    color:black; /*sets the font color to black*/
+    font-style: bold; /*makes the font style bold*/
+    text-align: center; /*This style makes the element stick to the horizontal middle of the screen*/
+    margin: 20px;
+    display: block; /*This style dictates how the element renders. "block" means elements start on the next line and dont overlap*/
+}
+
+.p { /*Style for the description of the event*/
+    color: black; 
+    text-align: center;
+    display: block; 
+    margin: 0; /*This style makes it so that there isnt extra space between elements*/
+}
+
+body { /*sets the style for the body class. this is the background image*/
+    background-image: url("img/rocky_skyline.png"); /*This gets the image "rocky_skyline.png" from the folder /img/ and sets it over the body element*/
+    background-size: cover; /*ensures the image covers the whole background*/
+    background-repeat: no-repeat; /*tells the website not to repeat the image if its too small*/
+    display: block;
+    margin: 0;
+}
+
+.p1 { /*sets the style for the p1 class*/
+    color: black;
+    text-align: center;
+    font-size: 1.5vw; /*the vw unit ensures the text scales with the size of the browser window. this means the text should never be too small or too big*/
+    display: block;
+    margin: 0;
+}
+
+.venue { /*sets style for the venue class*/
+    color: black;
+    text-align: center;
+    font-size: 2.5vw;
+    margin: 20px; 
+}
+
+.register_button{
+    border: none; /*removes the border of the default button*/
+    text-align: center; 
+    font-size: 16px; /*sets the font size as a static amount of pixels as i want the button to stay the same size*/
+    background-color: black; 
+    color: white; 
+    padding: 15px 32px; /*this refers to the css box model. the padding is the disatance between the border and the content*/
+    margin: 10px /*this also refers to the css box model. the margin refers to the distance between the border and the closest point a different element can be*/
+}
+
+.register_button:hover{ /*this is a pseudo class which makes the website more interactive by changing the background colour to grey when a button is hovered over*/
+    background-color: gray;
+    color: black;
+}
+
+.register_button:active{ /*this is a pseudo class which changes the background of the button to white when it is clicked*/
+    background-color: white;
+    color: black;
+}
+
+.banner_item { /*this class is for all of the button at the top of the menu banner*/
+    color: white;
+    float: left; /*This is the style that makes the menu banner at the top function such that the differnt buttons go in order*/
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+    border: 1px;
+    border-color: white;
+    text-decoration: none; /*this makes it so that the links in the menu are not underlines*/
+}
+
+.banner_item:hover{ /*this is a pseudo class which changes the background of the button to grey when it is hovered over*/
+    background-color: gray;
+    color: black;
+}
+
+.banner_item:active{ /*this is a pseudo class which changes the background of the button to white when it is clicked*/
+    background-color: white;
+    color:black;
+}
+
+.logo{ /*sets the stlye for the logo class*/
+    color: white;
+    background-color: black;
+    float: left; /*this means it will go as far left as it can in its container without overlapping other elements*/
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.schedule_table { /*style for the layout of a table element for the schedule*/
+    font-size: 40;
+    margin: 50px;
+    color: black;
+    width: 95%; /*sets the width of the table to 95% of the screens width. This means it will resize*/
+    border: 1px solid;
+}
+
+.schedule_data { /*sets the style for the data rows in the table of the schedule*/
+    font-size: 24;
+    height: 35px;
+    border: 1px solid; /*sets the border thickness to one pixel*/
+}
+
+.schedule_header { /*sets the style for the heading rows in the schedule table*/
+    font-size: 30; /*sets a static font size of 30*/
+    font-style: bold; /*sets the font style to bold*/
+    height: 40px; /*sets the height of the row in pixels*/
+    border: 1px solid;
+}
+
+.container { /*sets a style for the container of the contact form*/
+    border-radius: 5px; /*this rounds the edges of the container. I'ts pretty useless as the container is invisible*/
+    padding: 20px;
+}
+
+input[type=text], select, textarea, input[type=number] { /*sets the styles for the input class with ids of select text area and text*/
+    width: 100%; /*sets the width of the element to the  whole screen*/
+    padding: 12px;
+    border: 1px solid #ccc; /*sets the border to hex colour #ccc*/
+    border-radius: 4px; /*round the corners of the boxs border*/
+    box-sizing: border-box; /*makes padding and margin included into the height and width of an element*/
+    margin-top: 6px; /*sets the static top of the box to six pixels*/
+    margin-bottom: 16px; /*sets the static bottom of the box to sixteen pixels*/
+    resize: vertical; /*allows the property to vertically resized*/
+}
+
+
+
+.speakers_image{ /*style class for images of the speakers*/
+    border-radius: 8px; 
+    resize: vertical;
+    width: 10vw; /*set the width to 10vw. this means the width of the image will adjust with the size of the window*/
+    height: 10vw; /*sets the height of the image to 10vw. This means the height will scale with the size of the window*/
+}
+
+.speakers_containor{ /*style for the containor of the speakers table*/
+    font-size: 40;
+    margin: 50px;
+    color: black;
+    width: 95%; /*sets the width to 95% of the window screen size*/
+    border: 1px solid;
+}
+
+.speaker_title{ /*sets the style for the speaker_title class*/
+    color:black;
+    font-size: 2vw;
+    font-style: bold;
+}
+
+.speaker_bio{
+    margin-left: 5vw; /*adjusts the bio with the window size*/
+}
+
+.register_form{
+    border-radius: 5px; /*rounds the corner of the register form boxes*/
+    padding: 20px;
+    text-align: center;
+}
+
+.register_title{ /*makes it so that the title will be in the centre of the page*/
+    text-align: center;
+}
+
